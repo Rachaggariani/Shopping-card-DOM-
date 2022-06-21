@@ -1,0 +1,71 @@
+.card{
+    
+padding-top: 5%;
+margin-left:50px;
+
+}
+.c{ width: 28%;
+    border:1px solid black;
+}
+
+.cardimg{
+    width:200px;
+    height: 190px;
+}
+.cardtitle{
+    display: flex;
+    margin-top:-5px;
+}
+
+.sousactiondiv{
+display: flex;
+justify-content: center;
+padding-left:280px;
+
+
+}
+.souscard{
+  margin-top:5%;
+  margin-left:55px;
+}
+
+.actionsursum{
+    margin-left: 105px;
+}
+.soussum{
+    display:flex;
+    align-items: center;
+}
+.sumline{
+ border-top:1px dotted black;
+}
+.animlike{
+  animation-name:animlike;
+    transition-duration: 0.8s;
+    animation-timing-function:steps(28);
+}
+.like{
+    cursor:pointer;
+    background-position: 0 0;
+    height:150px;
+    width:80px;
+    background-image:url(https://cssanimation.rocks/images/posts/steps/heart.png);
+    position: absolute;
+    top:100%;
+    left:25%;
+    transform:translate(-50%,-47%);  
+}
+.x{
+background-position:-2800px 0; 
+transition:1s steps(28);
+}  
+
+@keyframes animlike{
+     0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -2800px 0;
+    } 
+    
+}
